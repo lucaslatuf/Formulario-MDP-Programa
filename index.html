@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario "Mar del Plata Programa"</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1>Formulario "Mar del Plata Programa"</h1>
+    <p>Por favor rellena el formulario con los datos correspondientes</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Ingrese su nombre: <input id="first-name" name="first-name" type="text" required /></label><br><br>
+        <label for="last-name">Ingrese su apellido: <input id="last-name" name="last-name" type="text" required /></label><br><br>
+        <label for="email">Ingrese su Email: <input id="email" name="email" type="email" required /></label><br><br>
+        <label>
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Yo acepto los 
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScnaoXEpHnqvsSyz0JBfu2PikpbhZ1-MxroOTVgqreLAPyF2g/viewform">terminos y condiciones</a>
+        </label><br><br>
+        <label for="age">Ingresa tu edad: <input id="age" type="number" name="age" min="13" max="120" /></label><br><br>
+        <label for="referrer">¿Cómo nos encontraste?
+          <select id="referrer" name="referrer">
+            <option value="">(Elige una opción)</option>
+            <option value="1">Noticias</option>
+            <option value="2">Redes sociales</option>
+            <option value="3">Televisión</option>
+            <option value="4">Diarios</option>
+          </select>
+        </label><br><br>
+        <label for="bio">¿Por qué queres ser parte del programa?:
+          <br><textarea id="bio" name="bio" rows="3" cols="30" placeholder="Quiero ser parte del programa porque..."></textarea>
+        </label>
+      </fieldset><br>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
